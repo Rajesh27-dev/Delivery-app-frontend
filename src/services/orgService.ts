@@ -6,7 +6,7 @@ export interface Org {
   status: string;
 }
 
-const BASE = "http://localhost:8081";
+const BASE = "http://localhost:8080";
 
 export const createOrg = async (name: string): Promise<Org> => {
   const res = await axios.post(`${BASE}/orgs`, { name });
